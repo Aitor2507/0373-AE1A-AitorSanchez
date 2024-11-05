@@ -47,10 +47,20 @@ git branch origin master
 
 ```
 
-
+Es importante que no se haga solo un commit entero sino que se tenga varios para tener una idea más clara de como se fue estructurando el trabajo.
 
 ## Markdown<a name="id2"></a>
-Texto del segundo apartado
+Lenguaje marcado para editar documentos de texto como este para que tenga la mayor legibilidad y facilidad de publicación.
+
+En markdown para los diferentes tamaños de encabezados escribiremos una almohadilla delante del texto que queremos que se vea en un encabezado u otro:
+'''
+# Primer nivel de encabezado
+## Segundo nivel de encabezado
+### Tercer nivel de encabezado
+#### Cuarto nivel de encabezado
+##### Quinto nivel de encabezado
+###### Sexto nivel de encabezado
+'''
 
 ## HTML<a name="id3"></a>
 
