@@ -131,12 +131,49 @@ Para hacer tablas con titulo y diferente información hemo de ponerlos entre est
 |**ASIX1**|Curso 2425|33|
 |DAW2|Curso 2425|32|
 
-Tambien si queremos el titulo lo queremos de un lado u otro hemos de poner los dos puntos en la izquierda o centrado como en el titulo 2 y 3.
+Tambien si queremos el titulo lo queremos de un lado u otro hemos de poner otra tabla con guiones y los dos puntos en la izquierda o centrado como en el titulo 2 y 3.
 
 ## HTML<a name="id3"></a>
-Lenguaje marcado utilizado para la creación de páginas web.
-###  
+Lenguaje marcado utilizado para la creación de páginas web.Consiste en serie de elementos encerrado en una manera estructurada se comporta de una manera u otra. Ahora veremos los diferentes elementos y atributos en HTML:
+###  Etiquetas 
+HTML utiliza etiquetas para los diferentes elementos para su intepretación de estas por ello tenemos:
+```Etiqueta de apertura -> Nombre de elemento ej. <p> (efecto del elemento párrafo)```
+```Etiqueta de cierre -> Indica fin del elemento ej. </p> (fin del efecto del elemento párrafo)```
+```Contenido -> Que contiene el elemento ej. texto```
+```Elemento -> Lo que constituye etiquetas y contenido ej. <p>esto es un elemento completo</p>```
 
+#### Etiquetas para rutas
+Para enlazar a otros archivos ya sea un HTML, CSS e imágenes. Especificaremos la ubicación de estos por 2 tipos:
+##### Ruta absoluta
+Especifica la ubicación completa del archivo web desde el dominio. Útil para enlazar archivos en servidor diferente o ubicación específica de la web. Ej.
+```<img src ="https://www.example.com/images/logo.png" alt ="Logo de Example">``` 
+##### Ruta relativa
+Especifica la ubicación del archivo en relación con la ubicación del documento actual. Útil para mantener estrucutura de enlaces clara dentro de un mismo sitio web. Ej.
+```<img src ="images/logo.png" alt ="Logo del sitio">```
+Indica que el archivo logo.png esta en el directorio images y este en el mismo directorio  que index.html donde ponemos este código anterior. 
+###  Atributos
+Información adicional del elemento, es abstracto cuando se muestra el contenido por lo que los atributos se colocan en la etiqueta de apertura y deben contener:
+
+``` Espacio entre este y nombre del elemento ```
+``` Nombre del atributo seguido por un igual ej. <p class = > ```
+``` Comillas de apertura y cierre encerrando el valor del atributo ej. <p class ="editor-note" > ```
+
+### Estructura básica de fichero HTML
+HTML incluye una declaración DOCTYPE, html, dentro un head y un body. El head consta de metadatos, CSS, scripts y el body todo lo que se mostrara en la web. Para llamarlo sería con un HTML:5 :
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+### Elementos bloque
 
 # Favicons
 
