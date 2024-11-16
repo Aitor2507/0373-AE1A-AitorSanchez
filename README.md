@@ -30,7 +30,7 @@ Copiamos el link del github creado:
 
 Primeramente hemos de instalarnos el git en su [página oficial](https://git-scm.com/) luego de hecho esto, abriremos el git e iniciaremos sesion en el local de esta manera y nos ubicaremos en la carpeta que queremos enlazar con la de github normalmente para que no haya problemas debemos tener el mismo nombre:
 
-```
+``` bash
 git config user.name "en este espacio tu nombre de github"
 git config user.email "correo verificado"
 git remote add origin " el link que queremos enlazar"
@@ -39,7 +39,7 @@ git remote add origin " el link que queremos enlazar"
 
 Luego cuando tenemos logeado nuestro git con el github  iniciaremos y haremos los diferentes cambios que queramos y al finalizar siempre hemos de hacer estos comandos para que se guarden tanto en el local como en el repositorio enlazado:
 
-```
+``` bash
 git init (para empezar)
 git add . ( para solo un archivo ponemos en el punto "archivo.txt")
 git commit -m "mensaje para explicar lo que se hizo aquí"
@@ -49,6 +49,13 @@ git pull origin master (para descargar cambios de repositorio a remoto)
 ```
 
 Es importante que no se haga solo un commit entero sino que se tenga varios para tener una idea más clara de como se fue estructurando el trabajo.
+
+### Clonar un github a local 
+Para clonarlo hemos de situarnos en la carpeta que querramos guardarlo y por último abrimos cmd y escribimos:
+
+```bash
+git clone "url_del_github_que_se_quiere_clonar"
+```
 
 ## Markdown<a name="id2"></a>
 Lenguaje marcado para editar documentos de texto como este para que tenga la mayor legibilidad y facilidad de publicación.
