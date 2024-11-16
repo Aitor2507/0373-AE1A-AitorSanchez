@@ -20,11 +20,11 @@ Una vez hecho el paso iremos a crear un repositorio dandole aqui:
 
 Le damos un nombre ,lo ponemos en público y le damos a crear:
 
-![GitHub_repo](fotos/github1.PNG "GitHub_repo")
+![GitHub_repo](fotos/github1.PNG)
 
 Copiamos el link del github creado:
 
-![GitHub_linkrepo](fotos/github2.PNG "GitHub_linkrepo")
+![GitHub_linkrepo](fotos/github2.PNG)
 
 ### Como enlazar un github a un git 
 
@@ -125,7 +125,7 @@ Para no estar copiando y pegando los enlaces o para que tenga un diseño más bo
 ```
 [nombre abreviado del enlace](https://es.wired.com/articulos/la-onu-crea-consejo-consultivo-de-inteligencia-artificial-un-paso-hacia-su-gobernanza-global "Tit opcional")
 
-![Texto alternativo](fotos/ia.webp "Tit opcional")
+![Texto alternativo](fotos/ia.webp)
 
 Aqui podemos verlos en ejemplos:
 
