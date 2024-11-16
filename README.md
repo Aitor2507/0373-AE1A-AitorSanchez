@@ -246,12 +246,12 @@ Son pequeñas estructuras que representa pequeños trozos de texto o datos. Cont
 
 - Normalmente en pares las etiquetas de apertura y cierre. Ej. ```<p></p>```
 - Existen etiquetas vacías, sin cierre. Ej.  ```<img>,<br> y <input>```
-- Anidación correctamente de las etiquetas HTML. Si una etiqueta '<b>' se abre dentro de una etiqueta '<p>', se debe cerrar antes de cerrar la etiqueta '<p>'
-- Atributos en etiquetas se especifica en las de apertura Ej. ```<img src="imagen.jpg" ``` que src especifica la ruta de la imagen.
+- Anidación correctamente de las etiquetas HTML. Si una etiqueta ```<b>``` se abre dentro de una etiqueta ```<p>```, se debe cerrar antes de cerrar la etiqueta ```<p>```
+- Atributos en etiquetas se especifica en las de apertura Ej. ```<img src="imagen.jpg"> ``` que src especifica la ruta de la imagen.
 - Se recomienda escribir en minúsuculas aunque los atributos y elementos funcionen en mayúsuculas. 
 
 ### Legibilidad y organización del código
-Claridad con el que se codifica el código fuente, es decir que se entienda de manera fácil y rápida. Por lo que es importante que este código sea legible. Por otro lado, hemos de pensar que la mayoría de códigos serán hechos por dos o más personas.Tenemos varias técnicas para un código legible y organizado:
+ Claridad con el que se codifica el código fuente, es decir que se entienda de manera fácil y rápida. Por lo que es importante que este código sea legible. Por otro lado, hemos de pensar que la mayoría de códigos serán hechos por dos o más personas.Tenemos varias técnicas para un código legible y organizado:
 - Comentarios
 - Indentación de código
 - Organización de archivos
@@ -262,18 +262,17 @@ Anotaciones no reflejadas en la web pero útil para el desarrollo web. Ej.
  ```
  - Utilizado para documentos largos.
  - Indicar secciones como cabecera, menú, columna izquierda, parte central con artículos, pie de página,etc.
- - 
 ### Identación de código
-Para lerr de una manera cómoda lo que escribimos se agregar saltos de línea, tabulaciones,etc. Normalmente identaremos para todo código que tenga una etiqueta de inicio y su correspondiente etiqueta de cierre, se ha de realizar siempre excepto si es texto el contenido.Ej.
+ Para leer de una manera cómoda lo que escribimos se agregar saltos de línea, tabulaciones,etc. Normalmente identaremos para todo código que tenga una etiqueta de inicio y su correspondiente etiqueta de cierre, se ha de realizar siempre excepto si es texto el contenido.Ej.
 ```html
 <div>
     <p>Esto es el contenido de un párrafo, incluiremos un <a href="https://loquesea.com">enlace externo</a> y  seguimos escribiendo...</p>
 </div>
 ```
 ### Organización de archivos
-Para una aplicación web  tendremos varios archivos con extensiones incluso repetitivos por lo que es ideal tenerlo organizado por diferentes carpetas por multimedia,estilos. Para el incio de las aplicaciones siempre se pondrá el HTML como 'index.html' para accerder más rápido y sin necesidad de escribirlo.
+ Para una aplicación web  tendremos varios archivos con extensiones incluso repetitivos por lo que es ideal tenerlo organizado por diferentes carpetas por multimedia,estilos. Para el incio de las aplicaciones siempre se pondrá el HTML como 'index.html' para accerder más rápido y sin necesidad de escribirlo.
 
-
+### Elementos semánticos en HTML 5
 
 # A3
  
