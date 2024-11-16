@@ -273,6 +273,10 @@ Anotaciones no reflejadas en la web pero útil para el desarrollo web. Ej.
  Para una aplicación web  tendremos varios archivos con extensiones incluso repetitivos por lo que es ideal tenerlo organizado por diferentes carpetas por multimedia,estilos. Para el incio de las aplicaciones siempre se pondrá el HTML como 'index.html' para accerder más rápido y sin necesidad de escribirlo.
 
 ### Elementos semánticos en HTML 5
+Saber usar HTML como puede ser con ```<span>``` agrupa contenidos de línea y ```<div>``` contenido en bloque. Como valor semántico no aporta nada un div  que significa dividir y agrupar contenido en bloques pero "no da pistas" sobre que tipo de elemento estructural contiene pero se le encuentra uno.Ej.```<header>, <footer>, <article>, <section>, <nav> y <figure>```
+![HTML_semantica](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/fotos/github_semantico.PNG "GitHub_semantica")
 
-# A3
- 
+### Formularios
+Interactua con el usuario para que pueda transmitir información, la cual es procesada de diferentes maneras según la web.Cada uno de estos contienen elementos como controles o campos que tienen el atributo name, que identifica que dato se quiere enviar.
+
+###
