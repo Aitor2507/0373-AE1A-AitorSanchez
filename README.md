@@ -20,11 +20,11 @@ Una vez hecho el paso iremos a crear un repositorio dandole aqui:
 
 Le damos un nombre ,lo ponemos en público y le damos a crear:
 
-![GitHub_repo](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/github1.PNG "GitHub_repo")
+![GitHub_repo](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/fotos/github1.PNG "GitHub_repo")
 
 Copiamos el link del github creado:
 
-![GitHub_linkrepo](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/github2.PNG "GitHub_linkrepo")
+![GitHub_linkrepo](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/fotos/github2.PNG "GitHub_linkrepo")
 
 ### Como enlazar un github a un git 
 
