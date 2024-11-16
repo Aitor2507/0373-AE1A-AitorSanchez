@@ -138,8 +138,11 @@ Lenguaje marcado utilizado para la creación de páginas web.Consiste en serie d
 ###  Etiquetas 
 HTML utiliza etiquetas para los diferentes elementos para su intepretación de estas por ello tenemos:
 ```Etiqueta de apertura -> Nombre de elemento ej. <p> (efecto del elemento párrafo)```
+
 ```Etiqueta de cierre -> Indica fin del elemento ej. </p> (fin del efecto del elemento párrafo)```
+
 ```Contenido -> Que contiene el elemento ej. texto```
+
 ```Elemento -> Lo que constituye etiquetas y contenido ej. <p>esto es un elemento completo</p>```
 
 #### Etiquetas para rutas
@@ -150,12 +153,17 @@ Especifica la ubicación completa del archivo web desde el dominio. Útil para e
 ##### Ruta relativa
 Especifica la ubicación del archivo en relación con la ubicación del documento actual. Útil para mantener estrucutura de enlaces clara dentro de un mismo sitio web. Ej.
 ```<img src ="images/logo.png" alt ="Logo del sitio">```
+
 Indica que el archivo logo.png esta en el directorio images y este en el mismo directorio  que index.html donde ponemos este código anterior. 
+#### Etiquetas para imágenes
+Utilizado mucho para las páginas para que sea atractivo. Con la etiqueta <img> sin etiqueta de cierre, se utiliza el src
 ###  Atributos
 Información adicional del elemento, es abstracto cuando se muestra el contenido por lo que los atributos se colocan en la etiqueta de apertura y deben contener:
 
 ``` Espacio entre este y nombre del elemento ```
+
 ``` Nombre del atributo seguido por un igual ej. <p class = > ```
+
 ``` Comillas de apertura y cierre encerrando el valor del atributo ej. <p class ="editor-note" > ```
 
 ### Estructura básica de fichero HTML
