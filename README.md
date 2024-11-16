@@ -63,7 +63,7 @@ Lenguaje marcado para editar documentos de texto como este para que tenga la may
 ### Encabezados
 En markdown para los diferentes tamaños de encabezados escribiremos una almohadilla delante del texto que queremos que se vea en un encabezado u otro:
 
-```
+``` markdown
 # Primer nivel de encabezado
 ## Segundo nivel de encabezado
 ### Tercer nivel de encabezado
@@ -75,7 +75,7 @@ En markdown para los diferentes tamaños de encabezados escribiremos una almohad
 ### Formato de letras
 Para los diferentes formatos de letras tendremos ponerlos entre estos diferents símbolos:
 
-```
+``` markdown
 *cursiva*
 **negrita**
 **_cursiva y negrita_**
@@ -84,7 +84,7 @@ Para los diferentes formatos de letras tendremos ponerlos entre estos diferents 
 ### Lista y sublistas
 En las listas lo ordenaremos por números como se escribe a mano pero aquí para que hayan sublistas se deben tabular de esta manera:
 
-```
+``` markdown
 1. Primer punto de la lista ordenado.
     1. Primer elemento de la sublista 1
     2. Segundo elemento de la sublista 1 
