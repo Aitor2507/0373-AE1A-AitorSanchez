@@ -120,12 +120,12 @@ Para no estar copiando y pegando los enlaces o para que tenga un diseño más bo
 Para hacer tablas con titulo y diferente información hemo de ponerlos entre estos símbolos || que hacen como referencia a la tabla, aquí les tengo un ejemplo:
 
 |Título 1|Título 2| Título 3|
-|sin puntos|puntos a la izquierda:|:centrado:|    
+|-----------|---------:|:------------:|    
 |SMX2|Curso 2324|25|
 |**ASIX1**|Curso 2425|33|
 |DAW2|Curso 2425|32|
 
-Tambien si queremos el titulo lo queremos de un lado u otro hemos de poner los dos puntos en la izquierda o centrado.
+Tambien si queremos el titulo lo queremos de un lado u otro hemos de poner los dos puntos en la izquierda o centrado como en el titulo 2 y 3.
 
 ## HTML<a name="id3"></a>
 Lenguaje marcado utilizado para la creación de páginas web.
