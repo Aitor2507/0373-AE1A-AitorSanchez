@@ -20,7 +20,7 @@ Una vez hecho el paso iremos a crear un repositorio dandole aqui:
 
 Le damos un nombre ,lo ponemos en público y le damos a crear:
 
-![GitHub_repo](/fotos/github1.PNG "GitHub_repo")
+![GitHub_repo](fotos/github1.PNG "GitHub_repo")
 
 Copiamos el link del github creado:
 
@@ -252,9 +252,10 @@ Son pequeñas estructuras que representa pequeños trozos de texto o datos. Cont
 
 ### Legibilidad y organización del código
  Claridad con el que se codifica el código fuente, es decir que se entienda de manera fácil y rápida. Por lo que es importante que este código sea legible. Por otro lado, hemos de pensar que la mayoría de códigos serán hechos por dos o más personas.Tenemos varias técnicas para un código legible y organizado:
-- Comentarios
-- Indentación de código
-- Organización de archivos
+  - Comentarios
+  - Indentación de código
+  - Organización de archivos 
+
 ### Comentarios
 Anotaciones no reflejadas en la web pero útil para el desarrollo web. Ej.
     ``` html
@@ -270,6 +271,7 @@ Anotaciones no reflejadas en la web pero útil para el desarrollo web. Ej.
       <p>Esto es el contenido de un párrafo, incluiremos un <a href="https://loquesea.com">enlace externo</a> y  seguimos escribiendo...</p>
     </div>
     ```
+
 ### Organización de archivos
  Para una aplicación web  tendremos varios archivos con extensiones incluso repetitivos por lo que es ideal tenerlo organizado por diferentes carpetas por multimedia,estilos. Para el incio de las aplicaciones siempre se pondrá el HTML como 'index.html' para accerder más rápido y sin necesidad de escribirlo.
 
