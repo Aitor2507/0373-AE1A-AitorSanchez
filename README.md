@@ -283,11 +283,38 @@ Interactua con el usuario para que pueda transmitir información, la cual es pro
 ### Etiquetas de formulario
 #### Input
 Utilizado para crear diversos campos interactivos en el formulario.
-- type ->Defines tipo de entrada que se debe mostrar
-- id ->Identificador único para campo
-- name
-- value
-- placeholder
-- required
-- disabled
-- readonly
+- type -> Define tipo de entrada que se debe mostrar
+- id -> Identificador único para campo, se puede asociar  el ```<label>``` con campo de entrada
+- name -> Nombre de campo de entrada
+- value -> Valor predeterminado de campo de entrada o valor enviado al servidor si el campo no es interactivo
+- placeholder -> Texto que aparece cuando el campo está vacío por lo que ofrece pista sobre el dato que se quiere ingresar
+- required -> Indica campo que debe completarse antes de enviar formulario
+- disabled -> Desactiva el campo, evitando interacción
+- readonly -> Campo solo de lectura, evita modificarse su contenido
+
+Ej. ```<input type="text" />```
+#### Form
+Utilizado para crear diversos formularios que permite al usuario enviar datos al servidor o realizar acción en la página web.
+
+- action -> Define URL donde envía datos del formulario para su procesamiento, destino que apunta el formulario.
+- method -> Método de envío de datos
+- enctype -> Define como se codifica los datos antes de ser enviads al servidor comos subir archivos.
+- target -> Indica dónde se debe mostrar la respuesta al enviar  el formulario. Pueden ser: _self (respuesta carga en la misma ventana), _blank (respuesta carga en otra ventana)
+Ej.
+``` html
+<form action="process.php" method="POST"
+enctype= "multipart/form-data">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Correo electronico:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="file">Subir archivo:</label>
+    <input type="file" id="file" name="file">
+
+    <button type="submit">Enviar</button>
+</form>
+```
+#### Input type radio y checkbox
+- Type radio : Permite selecciones múltiples
