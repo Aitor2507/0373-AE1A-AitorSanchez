@@ -11,7 +11,7 @@ Utilizado para el control de versiones, es decir para tener un manejo de registr
 
 Comenzamos yendo a  esta URL:
 
-![GitHub_web](fotos/github.PNG "GitHub_web")
+![GitHub_web](fotos/github.PNG)
 
 Luego de ello vamos a crearnos una cuenta para ello nos pedirá una verificación de correo electrónico.
 
