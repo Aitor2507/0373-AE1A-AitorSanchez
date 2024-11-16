@@ -11,7 +11,7 @@ Utilizado para el control de versiones, es decir para tener un manejo de registr
 
 Comenzamos yendo a  esta URL:
 
-![GitHub_web](/fotos/github.PNG "GitHub_web")
+![GitHub_web](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/fotos/github.PNG "GitHub_web")
 
 Luego de ello vamos a crearnos una cuenta para ello nos pedirá una verificación de correo electrónico.
 
@@ -278,7 +278,7 @@ Anotaciones no reflejadas en la web pero útil para el desarrollo web. Ej.
 ### Elementos semánticos en HTML 5
 Saber usar HTML como puede ser con ```<span>``` agrupa contenidos de línea y ```<div>``` contenido en bloque. Como valor semántico no aporta nada un div  que significa dividir y agrupar contenido en bloques pero "no da pistas" sobre que tipo de elemento estructural contiene pero se le encuentra uno.Ej.```<header>, <footer>, <article>, <section>, <nav> y <figure>```
 
- ![HTML_semantica](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/fotos/github_semantico.PNG "GitHub_semantica")
+ <img src =fotos/git>
 
 ### Formularios
 Interactua con el usuario para que pueda transmitir información, la cual es procesada de diferentes maneras según la web.Cada uno de estos contienen elementos como controles o campos que tienen el atributo name, que identifica que dato se quiere enviar.
@@ -303,61 +303,61 @@ Utilizado para crear diversos formularios que permite al usuario enviar datos al
 - method -> Método de envío de datos
 - enctype -> Define como se codifica los datos antes de ser enviads al servidor comos subir archivos.
 - target -> Indica dónde se debe mostrar la respuesta al enviar  el formulario. Pueden ser: _self (respuesta carga en la misma ventana), _blank (respuesta carga en otra ventana)
-Ej.
-``` html
-<form action="process.php" method="POST"
-enctype= "multipart/form-data">
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name">
+    Ej.
+    ``` html
+    <form action="process.php" method="POST"
+    enctype= "multipart/form-data">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name">
 
-    <label for="email">Correo electronico:</label>
-    <input type="email" id="email" name="email">
+        <label for="email">Correo electronico:</label>
+        <input type="email" id="email" name="email">
 
-    <label for="file">Subir archivo:</label>
-    <input type="file" id="file" name="file">
+        <label for="file">Subir archivo:</label>
+        <input type="file" id="file" name="file">
 
-    <button type="submit">Enviar</button>
-</form>
-```
+        <button type="submit">Enviar</button>
+    </form>
+    ```
 #### Input type radio y checkbox
 - Type radio : Permite selecciones múltiples Ej.
-``` html
-    <form action="recepcion.php" method="POST">
-    <fieldset>
-    <legend>Nacionalidad</legend>
-
-        <input type="checkbox" name="nacionalidad" value="España" id="española">
-        <label for="española">Española</label>
-
-        <input type="checkbox" name="nacionalidad" value="España" id="francesa">
-        <label for="francesa">Francesa</label>
-
-        <input type="checkbox" name="nacionalidad" value="España" id="canadiense">
-        <label for="canadiense">Canadiense</label>
-    </fieldset>
-    <button type="submit">Enviar datos</button>
-```
-- Type checkbox: Permite agrupar con otros de mismo nombre. Ej,
-``` html
-  <form action="recepcion.php" method="POST">
-        <label for="nombre">Nombre: </label>  <!--Label para nombre-->
-        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre"><br><br>
-
-        <label for="password">Password: </label> 
-        <input type="password" id="password" name="password" placeholder="Introduce tu contraseña"><br><br>
-
+    ``` html
+        <form action="recepcion.php" method="POST">
         <fieldset>
-            <legend>Idioma</legend>
-            <label for="castellano">Castellano: </label>  <!--Label para idiomas-->
-            <input type="radio" name="idioma" value="castellano" id="castellano"> 
-    
-            <label for="catalan">Catalan: </label>
-            <input type="radio" name="idioma" value="catalan" id="catalan"> 
-    
-            <label for="chino">Chino: </label>
-            <input type="radio" name="idioma" value="chino" id="chino"> 
+        <legend>Nacionalidad</legend>
+
+            <input type="checkbox" name="nacionalidad" value="España" id="española">
+            <label for="española">Española</label>
+
+            <input type="checkbox" name="nacionalidad" value="España" id="francesa">
+            <label for="francesa">Francesa</label>
+
+            <input type="checkbox" name="nacionalidad" value="España" id="canadiense">
+            <label for="canadiense">Canadiense</label>
         </fieldset>
-```
+        <button type="submit">Enviar datos</button>
+    ```
+- Type checkbox: Permite agrupar con otros de mismo nombre. Ej,
+    ``` html
+    <form action="recepcion.php" method="POST">
+            <label for="nombre">Nombre: </label>  <!--Label para nombre-->
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre"><br><br>
+
+            <label for="password">Password: </label> 
+            <input type="password" id="password" name="password" placeholder="Introduce tu contraseña"><br><br>
+
+            <fieldset>
+                <legend>Idioma</legend>
+                <label for="castellano">Castellano: </label>  <!--Label para idiomas-->
+                <input type="radio" name="idioma" value="castellano" id="castellano"> 
+        
+                <label for="catalan">Catalan: </label>
+                <input type="radio" name="idioma" value="catalan" id="catalan"> 
+        
+                <label for="chino">Chino: </label>
+                <input type="radio" name="idioma" value="chino" id="chino"> 
+            </fieldset>
+    ```
 #### Textarea
 Usado para crear área de texto en que usuarios puedan ingresar múltiples líneas de texto, para mensajes largos o descripciones detalladas.
 - name -> Especifica nombre de control que se usará para el formulario. Usado como clave en par nombre-valor cuando se envíe datos del formulario del servidor.
