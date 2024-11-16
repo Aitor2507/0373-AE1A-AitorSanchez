@@ -64,6 +64,7 @@ En markdown para los diferentes tamaños de encabezados escribiremos una almohad
 ##### Quinto nivel de encabezado
 ###### Sexto nivel de encabezado
 ```
+
 ### Formato de letras
 Para los diferentes formatos de letras tendremos ponerlos entre estos diferents símbolos:
 
@@ -79,7 +80,7 @@ En las listas lo ordenaremos por números como se escribe a mano pero aquí para
 ```
 1. Primer punto de la lista ordenado.
     1. Primer elemento de la sublista 1
-    * Segundo elemento de la sublista 1 
+    2. Segundo elemento de la sublista 1 
 2. Segundo punto de la lista.
     2. Segundo elemento de la sublista 1 
 3. Tercer punto de la lista.
@@ -117,21 +118,22 @@ Para no estar copiando y pegando los enlaces o para que tenga un diseño más bo
 ```
 ### Tablas 
 Para hacer tablas con titulo y diferente información hemo de ponerlos entre estos símbolos || que hacen como referencia a la tabla, aquí les tengo un ejemplo:
-```
-|Título 1 | Título 2| Título 3 |
+
+|Título 1 | Título 2 | Título 3|
 |-----------|---------:|:------------:|    
 |SMX2|Curso 2324|25|
 |**ASIX1**|Curso 2425|33|
 |DAW2|Curso 2425|32|
-```
+
 Tambien si queremos el titulo lo queremos de un lado u otro hemos de poner los dos puntos en la izquierda o centrado.
 
-
 ## HTML<a name="id3"></a>
-Lenguaje marcado utilizado para la creación de páginas web 
+Lenguaje marcado utilizado para la creación de páginas web.
+###  
 
 
 # Favicons
+
 
 # A3
  
