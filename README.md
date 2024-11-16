@@ -317,4 +317,78 @@ enctype= "multipart/form-data">
 </form>
 ```
 #### Input type radio y checkbox
-- Type radio : Permite selecciones múltiples
+- Type radio : Permite selecciones múltiples Ej.
+``` html
+    <form action="recepcion.php" method="POST">
+    <fieldset>
+    <legend>Nacionalidad</legend>
+
+        <input type="checkbox" name="nacionalidad" value="España" id="española">
+        <label for="española">Española</label>
+
+        <input type="checkbox" name="nacionalidad" value="España" id="francesa">
+        <label for="francesa">Francesa</label>
+
+        <input type="checkbox" name="nacionalidad" value="España" id="canadiense">
+        <label for="canadiense">Canadiense</label>
+    </fieldset>
+    <button type="submit">Enviar datos</button>
+```
+- Type checkbox: Permite agrupar con otros de mismo nombre. Ej,
+``` html
+  <form action="recepcion.php" method="POST">
+        <label for="nombre">Nombre: </label>  <!--Label para nombre-->
+        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre"><br><br>
+
+        <label for="password">Password: </label> 
+        <input type="password" id="password" name="password" placeholder="Introduce tu contraseña"><br><br>
+
+        <fieldset>
+            <legend>Idioma</legend>
+            <label for="castellano">Castellano: </label>  <!--Label para idiomas-->
+            <input type="radio" name="idioma" value="castellano" id="castellano"> 
+    
+            <label for="catalan">Catalan: </label>
+            <input type="radio" name="idioma" value="catalan" id="catalan"> 
+    
+            <label for="chino">Chino: </label>
+            <input type="radio" name="idioma" value="chino" id="chino"> 
+        </fieldset>
+```
+#### Textarea
+Usado para crear área de texto en que usuarios puedan ingresar múltiples líneas de texto, para mensajes largos o descripciones detalladas.
+- name -> Especifica nombre de control que se usará para el formulario. Usado como clave en par nombre-valor cuando se envíe datos del formulario del servidor.
+- id -> Identificador único del elemento, puede usarse para asociar etiqueta ```<label>```  con área de texto.
+- rows -> Define número de líneas visibles en una área de texto y especifica altura de caja.
+- cols -> Define número de carácteres visibles en una línea y especifica ancho de caja.
+- placeholder -> Texto que aparece cuando el campo está vacío por lo que ofrece pista sobre el dato que se quiere ingresar
+- required -> Indica campo que debe completarse antes de enviar formulario
+- disabled -> Desactiva el campo, evitando interacción
+- readonly -> Campo solo de lectura, evita modificarse su contenido
+
+#### Label
+Proporciona una etiqueta o descripción para elemento de formulario, como campo de entrada o opción de menú desplegable.Útil para acceso y uso de formulario.
+- for -> Especifica qué elemento de formulario esta asociado al ```<label>```, debe coincidir ```<id>```
+- form -> Permite asociar etiqueta con formulario especifico si hay varios, el id debe pertenecer al formulario que pertenece
+#### Select (o  option)
+Crear menús desplegables en formularios.Permite al usuario seleccionar una opción de una listas de estas.
+- name -> Especifica nombre de control que se usará para el formulario. Usado como clave en par nombre-valor cuando se envíe datos del formulario del servidor.
+- id -> Identificador único del elemento, puede usarse para asociar etiqueta ```<label>```  con área de texto.
+- size -> Define números de opciones visibles en la lista sin necesidad de desplazar.
+- multiple -> Selección de varias opciones a la vez
+- value -> Indica valor de la opción
+
+#### Fieldset/legend
+Utilizado para agrupar varios elementos de formulario en conjunto lógico, mejora estructura y legibilidad. Dentro de fieldset se utiliza un legend para proporcionar título o descripción  del grupo de elementos.
+- name -> Especifica nombre de control que se usará para el formulario. Usado como clave en par nombre-valor cuando se envíe datos del formulario del servidor.
+- disabled -> Desactiva el campo, evitando interacción como dentro del fieldset.
+- form -> Permite asociar etiqueta con formulario especifico si hay varios, el id debe pertenecer al formulario que pertenece
+
+#### Button
+Utilizado para crear varios botones interactivos en un formulario o página web. A diferencia de ```<input type="submit">```, el contenido del botón ```<button>``` incluye texto,imagen o HTML adicional.
+- type -> Define tipo de boton pueden ser:
+  - submit -> Enviar formulario cuando se hace click en el botón.No se especifica valor
+  - reset -> Restablecer campos de formulario. Utilizado con JavaScript y sin valor
+  - name -> Define nombre de botón que será enviado con datos de formulario si el botón tiene atributo ```<type="submit">```
+  - value -> Especifica valor que se enviar al servidor si es de tipo submit
+  - disabled -> Desactivar botón impidiendo que se haga click en este
