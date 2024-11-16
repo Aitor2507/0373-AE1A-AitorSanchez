@@ -11,7 +11,7 @@ Utilizado para el control de versiones, es decir para tener un manejo de registr
 
 Comenzamos yendo a  esta URL:
 
-![GitHub_web](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/fotos/github.PNG "GitHub_web")
+![GitHub_web](fotos/github.PNG "GitHub_web")
 
 Luego de ello vamos a crearnos una cuenta para ello nos pedirá una verificación de correo electrónico.
 
@@ -305,7 +305,7 @@ Utilizado para crear diversos formularios que permite al usuario enviar datos al
 - target -> Indica dónde se debe mostrar la respuesta al enviar  el formulario. Pueden ser: _self (respuesta carga en la misma ventana), _blank (respuesta carga en otra ventana)
 
  Ej.
- 
+
     ``` html
     <form action="process.php" method="POST"
     enctype= "multipart/form-data">
