@@ -11,7 +11,7 @@ Utilizado para el control de versiones, es decir para tener un manejo de registr
 
 Comenzamos yendo a  esta URL:
 
-![GitHub_web](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/github.PNG "GitHub_web")
+![GitHub_web](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/fotos/github.PNG "GitHub_web")
 
 Luego de ello vamos a crearnos una cuenta para ello nos pedirá una verificación de correo electrónico.
 
@@ -116,7 +116,7 @@ Para no estar copiando y pegando los enlaces o para que tenga un diseño más bo
 [nombre abreviado del enlace](http://www.limni.net "Tit opcional")	
 ![Texto alternativo](/ruta/a/la/imagen.jpg "Tit opcional")
 ```
-[nombre abreviado del enlace](hhttps://es.wired.com/articulos/la-onu-crea-consejo-consultivo-de-inteligencia-artificial-un-paso-hacia-su-gobernanza-global "Tit opcional")
+[nombre abreviado del enlace](https://es.wired.com/articulos/la-onu-crea-consejo-consultivo-de-inteligencia-artificial-un-paso-hacia-su-gobernanza-global "Tit opcional")
 
 ![Texto alternativo](/fotos/ia.webp "Tit opcional")
 
