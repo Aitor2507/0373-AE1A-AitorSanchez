@@ -152,8 +152,8 @@ HTML utiliza etiquetas para los diferentes elementos para su intepretación de e
 ```Contenido -> Que contiene el elemento ej. texto```
 
 ```Elemento -> Lo que constituye etiquetas y contenido ej. <p>esto es un elemento completo</p>```
-
-#### Etiquetas para rutas
+####  Etiquetas básicas de HTML
+#### Etiquetas por diferentes rutas
 Para enlazar a otros archivos ya sea un HTML, CSS e imágenes. Especificaremos la ubicación de estos por 2 tipos:
 ##### Ruta absoluta
 Especifica la ubicación completa del archivo web desde el dominio. Útil para enlazar archivos en servidor diferente o ubicación específica de la web. Ej.
@@ -234,8 +234,45 @@ HTML incluye una declaración DOCTYPE, html, dentro un head y un body. El head c
 ```
 
 ### Elementos bloque y línea
+Dentro del body incluimos todo el contenido web, es decir toda la información web que queramos que se vea para el usuario final. Y serán diferentes elementos con sus atributos para este objetivo.Clasificados en 2 tipos:
+#### Elementos de bloque
+Grandes estructuras que contiene otros elementos de bloque, elementos de línea o texto.Normalmente el navegador los pone como independientes y separa uno con otro con un salto de línea en blanco. Ej.
+```<h1>-<h6> encabezado, <p> párrafo, <br> salto de línea, <hr> separador, <blockquote> (cita),<pre> texto preformateado, <div> división ```
+#### Elementos de línea
+Son pequeñas estructuras que representa pequeños trozos de texto o datos. Contiene solo texto u otro elementos de línea. Normalmente el navegador muestra los elementos de línea uno detrás de otro, en línea, dentro del elemento bloque que los contiene como hipervínculos, citas o imágenes.Ej.
+```<em>(énfasis/cursiva), <strong>(fuerte énfasis/negrita),<q> (citas cortas), <span> (rango), <cite>, <abbr>, <code>```
 
-# Favicons
+### Resumen normas básicas de etiquetas HTML
+
+- Normalmente en pares las etiquetas de apertura y cierre. Ej. ```<p></p>```
+- Existen etiquetas vacías, sin cierre. Ej.  ```<img>,<br> y <input>```
+- Anidación correctamente de las etiquetas HTML. Si una etiqueta '<b>' se abre dentro de una etiqueta '<p>', se debe cerrar antes de cerrar la etiqueta '<p>'
+- Atributos en etiquetas se especifica en las de apertura Ej. ```<img src="imagen.jpg" ``` que src especifica la ruta de la imagen.
+- Se recomienda escribir en minúsuculas aunque los atributos y elementos funcionen en mayúsuculas. 
+
+### Legibilidad y organización del código
+Claridad con el que se codifica el código fuente, es decir que se entienda de manera fácil y rápida. Por lo que es importante que este código sea legible. Por otro lado, hemos de pensar que la mayoría de códigos serán hechos por dos o más personas.Tenemos varias técnicas para un código legible y organizado:
+- Comentarios
+- Indentación de código
+- Organización de archivos
+### Comentarios
+Anotaciones no reflejadas en la web pero útil para el desarrollo web. Ej.
+``` html
+ <!--Esto  es un comentario-->
+ ```
+ - Utilizado para documentos largos.
+ - Indicar secciones como cabecera, menú, columna izquierda, parte central con artículos, pie de página,etc.
+ - 
+### Identación de código
+Para lerr de una manera cómoda lo que escribimos se agregar saltos de línea, tabulaciones,etc. Normalmente identaremos para todo código que tenga una etiqueta de inicio y su correspondiente etiqueta de cierre, se ha de realizar siempre excepto si es texto el contenido.Ej.
+```html
+<div>
+    <p>Esto es el contenido de un párrafo, incluiremos un <a href="https://loquesea.com">enlace externo</a> y  seguimos escribiendo...</p>
+</div>
+```
+### Organización de archivos
+Para una aplicación web  tendremos varios archivos con extensiones incluso repetitivos por lo que es ideal tenerlo organizado por diferentes carpetas por multimedia,estilos. Para el incio de las aplicaciones siempre se pondrá el HTML como 'index.html' para accerder más rápido y sin necesidad de escribirlo.
+
 
 
 # A3
