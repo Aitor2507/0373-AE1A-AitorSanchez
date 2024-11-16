@@ -142,6 +142,7 @@ Tambien si queremos el titulo lo queremos de un lado u otro hemos de poner otra 
 
 ## HTML<a name="id3"></a>
 Lenguaje marcado utilizado para la creación de páginas web.Consiste en serie de elementos encerrado en una manera estructurada se comporta de una manera u otra. Ahora veremos los diferentes elementos y atributos en HTML:
+
 ###  Etiquetas 
 HTML utiliza etiquetas para los diferentes elementos para su intepretación de estas por ello tenemos:
 ```Etiqueta de apertura -> Nombre de elemento ej. <p> (efecto del elemento párrafo)```
@@ -163,7 +164,50 @@ Especifica la ubicación del archivo en relación con la ubicación del document
 
 Indica que el archivo logo.png esta en el directorio images y este en el mismo directorio  que index.html donde ponemos este código anterior. 
 #### Etiquetas para imágenes
-Utilizado mucho para las páginas para que sea atractivo. Con la etiqueta <img> sin etiqueta de cierre, se utiliza el src
+Utilizado mucho para las páginas para que sea atractivo. Con la etiqueta '<img>' la cual va sin etiqueta de cierre, se utiliza el src para indicar la ruta de la imagen como anteriormente lo hicimos, alt para el texto alternativo en caso de que en navegador no muestre la imagen indicada.Ej.
+
+```<img src ="media/logo.png" alt ="Logo de la web">```
+
+#### Etiquetas para enlaces
+La World Wide Web tiene la capacidad de saltar de una página web a otra por enlaces, llamada esta navegación como hipertexto y se usa con un <a> la cual si tiene la etiqueta de cierre. Por otro lado para indicar el destino del enlace utlizamos el atributo '<href>'
+##### Enlaces a páginas externas
+Para páginas externas como enlazar nuestra página web y que aparezca con un cierto nombre sería:
+```html
+<p><a href="https://m.joan23.fje.edu/" title="JonaXXIII">Jesuïtes Bellvitge - Joan XXIII</a></p>
+```
+##### Enlaces a páginas locales
+Para un documento local usamos ruta relativa al archivo que se quiera enlazar el atributo href. Ej.
+``` html
+<div id="menu">
+    <a href="index.html" title="Volver a la página de inicio">Inicio</a>
+    <a href="secciones/presentaciones.html" title="Fotos de la web">Presentaciones</a>
+<div>
+```
+#### Etiquetas anticuadas
+Podemos encontrar etiquetas que se permite pero se recomienda no  utilizar, son para la presentación del documento y NO estructura. Ej. ``` <b>(negrita),<i>(cursiva), <u>subrayado, <font>(tipo de fuente), <center>(centrado texto)``` 
+Y otras que pueden ser para reemplazar el uso de CSS como ```align, border... ```
+#### Etiquetas para listas
+##### Listas desordenadas
+Orden de items no relevante como lista de compras encerradas con un elemento ``` <ul>``` y este se puede indicar el símbolo de tipografía.Ej. 
+``` html
+<ul type =DISC>
+<ul type =SQUARE>
+<ul type =CIRCLE>
+```
+##### Listas ordenadas
+Orden de ítemos relevante como una receta con un elemento ``` <ol>``` y este se puede indicar el tipo de enumeración de lista, por defecto numérica.Ej.
+``` html
+<ol type =A>
+<ol type =a>
+<ol type =l>
+<ol type=i start =10>
+<ol type= 1>
+```
+
+- Añadiendo el  parámetro start=n fuerza la numeración de un cierto valor.
+- Añadiendo el  parámetro value=n fuerza al elemento que tenga el número de orden que indiquemos.
+- Cada elemento de la lista se coloca dentro de un elemento '<li>' (lis item).
+
 ###  Atributos
 Información adicional del elemento, es abstracto cuando se muestra el contenido por lo que los atributos se colocan en la etiqueta de apertura y deben contener:
 
@@ -188,7 +232,8 @@ HTML incluye una declaración DOCTYPE, html, dentro un head y un body. El head c
 </body>
 </html>
 ```
-### Elementos bloque
+
+### Elementos bloque y línea
 
 # Favicons
 
