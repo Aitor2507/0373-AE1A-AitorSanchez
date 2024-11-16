@@ -116,6 +116,12 @@ Para no estar copiando y pegando los enlaces o para que tenga un diseño más bo
 [nombre abreviado del enlace](http://www.limni.net "Tit opcional")	
 ![Texto alternativo](/ruta/a/la/imagen.jpg "Tit opcional")
 ```
+[nombre abreviado del enlace](hhttps://es.wired.com/articulos/la-onu-crea-consejo-consultivo-de-inteligencia-artificial-un-paso-hacia-su-gobernanza-global "Tit opcional")
+
+![Texto alternativo](/fotos/ia.webp "Tit opcional")
+
+Aqui podemos verlos en ejemplos:
+
 ### Tablas 
 Para hacer tablas con titulo y diferente información hemo de ponerlos entre estos símbolos || que hacen como referencia a la tabla, aquí les tengo un ejemplo:
 
