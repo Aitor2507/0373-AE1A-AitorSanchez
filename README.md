@@ -11,7 +11,7 @@ Utilizado para el control de versiones, es decir para tener un manejo de registr
 
 Comenzamos yendo a  esta URL:
 
-![GitHub_web](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/fotos/github.PNG "GitHub_web")
+![GitHub_web](/fotos/github.PNG "GitHub_web")
 
 Luego de ello vamos a crearnos una cuenta para ello nos pedirá una verificación de correo electrónico.
 
@@ -20,11 +20,11 @@ Una vez hecho el paso iremos a crear un repositorio dandole aqui:
 
 Le damos un nombre ,lo ponemos en público y le damos a crear:
 
-![GitHub_repo](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/fotos/github1.PNG "GitHub_repo")
+![GitHub_repo](/fotos/github1.PNG "GitHub_repo")
 
 Copiamos el link del github creado:
 
-![GitHub_linkrepo](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/fotos/github2.PNG "GitHub_linkrepo")
+![GitHub_linkrepo](/fotos/github2.PNG "GitHub_linkrepo")
 
 ### Como enlazar un github a un git 
 
@@ -257,25 +257,26 @@ Son pequeñas estructuras que representa pequeños trozos de texto o datos. Cont
 - Organización de archivos
 ### Comentarios
 Anotaciones no reflejadas en la web pero útil para el desarrollo web. Ej.
-``` html
- <!--Esto  es un comentario-->
- ```
+    ``` html
+     <!--Esto  es un comentario-->
+    ```
  - Utilizado para documentos largos.
  - Indicar secciones como cabecera, menú, columna izquierda, parte central con artículos, pie de página,etc.
 ### Identación de código
  Para leer de una manera cómoda lo que escribimos se agregar saltos de línea, tabulaciones,etc. Normalmente identaremos para todo código que tenga una etiqueta de inicio y su correspondiente etiqueta de cierre, se ha de realizar siempre excepto si es texto el contenido.Ej.
-```html
-<div>
-    <p>Esto es el contenido de un párrafo, incluiremos un <a href="https://loquesea.com">enlace externo</a> y  seguimos escribiendo...</p>
-</div>
-```
+
+    ``` html
+    <div>
+      <p>Esto es el contenido de un párrafo, incluiremos un <a href="https://loquesea.com">enlace externo</a> y  seguimos escribiendo...</p>
+    </div>
+    ```
 ### Organización de archivos
  Para una aplicación web  tendremos varios archivos con extensiones incluso repetitivos por lo que es ideal tenerlo organizado por diferentes carpetas por multimedia,estilos. Para el incio de las aplicaciones siempre se pondrá el HTML como 'index.html' para accerder más rápido y sin necesidad de escribirlo.
 
 ### Elementos semánticos en HTML 5
 Saber usar HTML como puede ser con ```<span>``` agrupa contenidos de línea y ```<div>``` contenido en bloque. Como valor semántico no aporta nada un div  que significa dividir y agrupar contenido en bloques pero "no da pistas" sobre que tipo de elemento estructural contiene pero se le encuentra uno.Ej.```<header>, <footer>, <article>, <section>, <nav> y <figure>```
 
-![HTML_semantica](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/fotos/github_semantico.PNG "GitHub_semantica")
+ ![HTML_semantica](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/blob/main/fotos/github_semantico.PNG "GitHub_semantica")
 
 ### Formularios
 Interactua con el usuario para que pueda transmitir información, la cual es procesada de diferentes maneras según la web.Cada uno de estos contienen elementos como controles o campos que tienen el atributo name, que identifica que dato se quiere enviar.
