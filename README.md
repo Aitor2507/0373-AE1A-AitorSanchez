@@ -20,11 +20,11 @@ Una vez hecho el paso iremos a crear un repositorio dandole aqui:
 
 Le damos un nombre ,lo ponemos en público y le damos a crear:
 
-![GitHub_repo](fotos/github1.PNG "GitHub_repo")
+![GitHub_repo](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/fotos/github1.PNG "GitHub_repo")
 
 Copiamos el link del github creado:
 
-![GitHub_linkrepo](/fotos/github2.PNG "GitHub_linkrepo")
+![GitHub_linkrepo](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/fotos/github2.PNG "GitHub_linkrepo")
 
 ### Como enlazar un github a un git 
 
@@ -125,7 +125,7 @@ Para no estar copiando y pegando los enlaces o para que tenga un diseño más bo
 ```
 [nombre abreviado del enlace](https://es.wired.com/articulos/la-onu-crea-consejo-consultivo-de-inteligencia-artificial-un-paso-hacia-su-gobernanza-global "Tit opcional")
 
-![Texto alternativo](/fotos/ia.webp "Tit opcional")
+![Texto alternativo](https://github.com/Aitor2507/0373-AE1A-AitorSanchez/fotos/ia.webp "Tit opcional")
 
 Aqui podemos verlos en ejemplos:
 
@@ -303,7 +303,9 @@ Utilizado para crear diversos formularios que permite al usuario enviar datos al
 - method -> Método de envío de datos
 - enctype -> Define como se codifica los datos antes de ser enviads al servidor comos subir archivos.
 - target -> Indica dónde se debe mostrar la respuesta al enviar  el formulario. Pueden ser: _self (respuesta carga en la misma ventana), _blank (respuesta carga en otra ventana)
-    Ej.
+
+ Ej.
+ 
     ``` html
     <form action="process.php" method="POST"
     enctype= "multipart/form-data">
@@ -318,9 +320,12 @@ Utilizado para crear diversos formularios que permite al usuario enviar datos al
 
         <button type="submit">Enviar</button>
     </form>
+
     ```
+
 #### Input type radio y checkbox
 - Type radio : Permite selecciones múltiples Ej.
+
     ``` html
         <form action="recepcion.php" method="POST">
         <fieldset>
