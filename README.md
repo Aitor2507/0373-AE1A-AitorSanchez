@@ -471,3 +471,38 @@ A medida que fue creciendo el Intenet tambien la información textual en las pag
 - **1998**: CSS Nivel 2  
 - **2008**: CSS2.1 Revisión  
 - **Actualidad**: CSS3 modular (algunos módulos en desarrollo)
+
+ **Ventajas**:  
+- Código más limpio y mantenible  
+- Más potente que las etiquetas de presentación de HTML  
+- Lenguaje sencillo  
+- Múltiples hojas de estilo para un documento
+- Reutilizable en varios archivos HTML  
+
+ **Desventajas**:  
+- Inconsistencias entre navegadores (requieren soluciones como otras hojas de estilo)  
+### Ubicación
+ **Inline**
+ -Propiedades  CSS directamente al elemento usando atributo style. 
+```html
+<p style="text-align:center; color:red">Texto rojo centrado</p>
+```
+**Interno**
+ -Dentro del documento en parte head podemos poner el style. 
+```html
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+```
+**Externo**
+ -Llamandolo con su direccion y que sea .css para los estilos
+```html
+<link rel="stylesheet" href="estilos.css">
+```
+
