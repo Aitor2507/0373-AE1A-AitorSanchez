@@ -505,4 +505,13 @@ A medida que fue creciendo el Intenet tambien la información textual en las pag
 ```html
 <link rel="stylesheet" href="estilos.css">
 ```
+### Prioridad
+1. Estilos externos  
+2. Estilos internos (en `<head>`)  
+3. Estilos inline (en etiquetas)  
+4. Reglas contradictorias: gana la última declarada  
 
+### Especificidad 
+Sistema de puntuación:  
+```plaintext
+Inline (1000) > ID (100) > Clase/Atributo (10) > Elemento (1)
