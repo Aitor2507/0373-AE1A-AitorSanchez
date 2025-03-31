@@ -402,6 +402,61 @@ Utilizado para crear varios botones interactivos en un formulario o página web.
   - disabled -> Desactivar botón impidiendo que se haga click en este
 
 ### Tablas
-Las tablas son recursos para mostrar información  tabulada en filas y columnas. Antes de que aparezca el CSS se modificaba las mismas tablas diviendo la tabla en celdas para los diferentes contenidos.Ahora con el CSS es posible modificarlo con '<div>' y tabularlo.
 
-####
+Las tablas permiten organizar información en filas y columnas. Para páginas anteriormente pero ahora solo es para tabulaciones.
+#### Etiquetas principales
+- **`<table>`**: Inicia una tabla. Atributos comunes:
+  - `border`: Define el grosor del borde.
+  - `width`: Especifica el ancho.
+  - Ejemplo: `<table border="1" width="100%">`
+
+- **`<thead>`**: Agrupa el encabezado de la tabla, normalmente con etiquetas `<th>`.
+
+- **`<tbody>`**: Agrupa el contenido principal de la tabla.
+
+- **`<tfoot>`**: Agrupa el pie de la tabla, útil para resúmenes.
+
+#### Otras etiquetas
+- **`<tr>`**: Define una fila. Atributos:
+  - `align`: Alinea el contenido (`left`, `right`, `center`).
+  - `bgcolor`: Cambia el color de fondo.
+  - Ejemplo: `<tr align="center" bgcolor="#f0f0f0">`
+
+- **`<th>`**: Define una celda de encabezado. Atributos:
+  - `colspan`: Combina varias columnas.
+  - `rowspan`: Combina varias filas.
+  - Ejemplo: `<th colspan="2">`
+
+- **`<td>`**: Define una celda de datos. Atributos:
+  - `align`: Alinea el contenido.
+  - `colspan` y `rowspan`: Igual que en `<th>`.
+  - Ejemplo: `<td align="right" colspan="3">`
+
+#### Ejemplo básico
+```html
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>Columna 1</th>
+      <th>Columna 2</th>
+      <th>Columna 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dato 1</td>
+      <td>Dato 2</td>
+      <td>Dato 3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Dato combinado</td>
+      <td>Dato 4</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Pie de tabla</td>
+    </tr>
+  </tfoot>
+</table>
+
