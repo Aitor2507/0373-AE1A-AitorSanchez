@@ -296,7 +296,7 @@ Utilizado para crear diversos campos interactivos en el formulario.
 - readonly -> Campo solo de lectura, evita modificarse su contenido
 
 Ej. ```<input type="text" />```
-#### Form
+### Form
 Utilizado para crear diversos formularios que permite al usuario enviar datos al servidor o realizar acción en la página web.
 
 - action -> Define URL donde envía datos del formulario para su procesamiento, destino que apunta el formulario.
@@ -400,3 +400,8 @@ Utilizado para crear varios botones interactivos en un formulario o página web.
   - name -> Define nombre de botón que será enviado con datos de formulario si el botón tiene atributo ```<type="submit">```
   - value -> Especifica valor que se enviar al servidor si es de tipo submit
   - disabled -> Desactivar botón impidiendo que se haga click en este
+
+### Tablas
+Las tablas son recursos para mostrar información  tabulada en filas y columnas. Antes de que aparezca el CSS se modificaba las mismas tablas diviendo la tabla en celdas para los diferentes contenidos.Ahora con el CSS es posible modificarlo con '<div>' y tabularlo.
+
+####
