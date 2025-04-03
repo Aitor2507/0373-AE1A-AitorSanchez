@@ -5,6 +5,7 @@
 2. [Markdown](#id2)
 3. [HTML](#id3)
 4. [CSS](#id4)
+5. [XML](#id5)
 
 ## Github<a name="id1"></a>
 Utilizado para el control de versiones, es decir para tener un manejo de registros con los cambios de los diferentes archivos. Por otra parte podemos tener colaboradores y ver tambien los cambios y actualizaciones.
@@ -519,12 +520,236 @@ Sistema de puntuación:
 
 `Inline (1000) > ID (100) > Clase/Atributo (10) > Elemento (1)`
 ### Estructura
-Conjunto de reglas que define estética final de los documentos X(HTML) que la usan. Cada regla formada por selector y conjunto de declaraciones.
-Declaracion-> Forma propiedad y valor asociado.
-Selector -> Nos sirve para definir a qué elemento o elementos 
+Conjunto de reglas que define estética final de documentos como HTML. Cada regla formada por selector y conjunto de declaraciones.
+Declaracion-> Forma propiedad y valor asociado. ej. font-size: 10pt
+Selector -> Nos sirve para definir a qué elemento o elementos aplicaremos declaraciones de regla ej. p (de parrafo)
 ```css 
  p {
   font-size: 10 pt;
   background-color: gray;
  }
+```
+### Comentarios en CSS
+Los comentarios en CSS se escriben entre `/*` y `*/` y pueden ocupar varias líneas. El navegador ignora el contenido de los comentarios al renderizar.
+
+**Ejemplo de comentario:**
+```css
+/* Esto es un comentario en CSS */
+selector {
+  propiedad1: valor;
+  propiedad2: valor;
+}
+```
+### Agrupar selectores en CSS
+Para evitar repetición, se pueden agrupar selectores separados por comas. Las reglas dentro de las llaves se aplicarán a todos los selectores indicados.
+
+**Ejemplo sin agrupar:**
+```css
+h1 {
+  color: red;
+}
+p {
+  color: red;
+}
+```
+
+**Ejemplo agrupando selectores:**
+```css
+h1, p {
+  color: red;
+}
+```
+### Tipos de selectores en CSS
+
+En CSS, los selectores permiten aplicar estilos a elementos específicos del documento HTML. Se dividen en:
+
+#### Selectores básicos:
+1. **Selector de elementos**: Aplica estilos a todas las etiquetas de un tipo específico.
+2. **Selector de ID**: Aplica estilos a un elemento con un atributo `id` específico.
+3. **Selector de clase**: Aplica estilos a todos los elementos con una clase específica.
+
+#### Selectores avanzados:
+1. **Selector universal (`*`)**: Aplica estilos a todos los elementos.
+2. **Selectores de atributos**: Aplica estilos a elementos con atributos específicos.
+3. **Selector de hijos (`>`):** Aplica estilos a hijos directos de un elemento.
+4. **Selector de descendientes (espacio)**: Aplica estilos a todos los descendientes de un elemento.
+5. **Selector de hermanos adyacentes (`+`)**: Aplica estilos al hermano inmediato de un elemento.
+6. **Pseudoclases**: Estilos basados en el estado de un elemento (ej. `:hover`).
+7. **Pseudoelementos**: Estilos para partes específicas de un elemento (ej. `::before`, `::after`).
+#### Selector de elementos (selector de tipo)
+Este selector aplica estilos a todos los elementos de un tipo específico en la página. Por ejemplo, el siguiente código afectará a **todos los elementos `<a>`** del documento HTML:
+
+```css
+/* Afecta a todos los elementos <a> del documento HTML */
+a {
+  color: red;
+}
+```
+#### Selector de ID
+El selector de ID aplica estilos a un elemento con un atributo `id` específico. Se define con el símbolo `#` seguido del valor del `id`.
+
+**Ejemplo:**
+```css
+#example {
+  property: value;
+  property2: value2;
+}
+```
+
+Este código afectará al siguiente elemento HTML:
+```html
+<p id="example">Texto de ejemplo</p>
+#### Selector de clase
+Aplica estilos a elementos con un atributo `class` específico. Se define con un punto (`.`) seguido del nombre de la clase.
+
+**Ejemplo:**
+```css
+.example {
+  property: value;
+  property2: value2;
+}
+```
+Afecta a elementos como:
+```html
+<p class="example">Texto de ejemplo</p>
+<li class="example">Elemento de lista</li>
+<div class="example">Div de ejemplo</div>
+```
+
+#### Selector universal
+Selecciona todos los elementos de la página, representado por un asterisco (`*`).
+
+**Ejemplo:**
+```css
+* {
+  border: 1px solid #000000;
+}
+```
+Aplica un borde negro sólido de 1px a todos los elementos del documento.
+
+#### Selectores de atributos 
+Aplica estilos a elementos con atributos específicos.  
+   ```css
+   img[alt] {
+     border: 1px solid #000000;
+   }
+   ```
+También se puede especificar el valor del atributo, como partes concretas como extensión de archivos:  
+   ```css
+   img[src="alert.gif"] {
+     border: 1px solid #000000;
+   }
+   ```
+#### Selectores de hijos
+Permiten seleccionar elementos que son **hijos directos** de otros elementos. Por ejemplo, el siguiente código aplica estilos solo a los elementos `<strong>` que son hijos de `<h3>`:
+
+```css
+h3 > strong {
+  color: blue;
+}
+```
+
+También se puede aplicar estilos a un hijo específico utilizando la pseudoclase `:nth-child(n)`, donde `n` indica el número del hijo.
+
+**Ejemplo:**
+```css
+.parent :nth-child(4) {
+  color: red;
+}
+```
+
+**HTML:**
+```html
+<div class="parent">
+  <p>Primer hijo</p>
+  <div>Segundo hijo</div>
+  <span>Tercer hijo</span>
+  <div>Cuarto hijo</div>
+  <p>Quinto hijo</p>
+</div>
+```
+
+En este caso, el estilo se aplicará al cuarto hijo directo del elemento con clase `parent`, sin importar su tipo.
+#### Selectores descendientes
+Seleccionan todos los elementos que están dentro de otro elemento, sin importar cuántos niveles de anidamiento existan.
+
+**Sintaxis:**  
+```css
+ancestro descendiente {
+  propiedad: valor;
+}
+```
+#### Selector de Hermanos Adyacentes (`+`)
+
+Selecciona **solo el primer elemento** que aparece **inmediatamente después** de otro elemento, **al mismo nivel** (hermanos).Ej
+
+```css
+elemento1 + elemento2 {
+  propiedad: valor;
+}
+```
+#### Pseudoelementos 
+Estilizar solo la primera línea de un párrafo:
+```css
+p::first-line {
+  font-weight: bold;
+  color: #336699;
+}
+```
+#### Flexbox: Diseño Flexible
+
+Antes se usaban:  
+- Posicionamiento (static, relative, absolute)  
+- Elementos en línea/bloque  
+- Propiedad float  
+
+Estos métodos resultaban limitados para diseños modernos que deben adaptarse a:  
+ - Diferentes dispositivos (móviles, escritorio)  
+ - Múltiples resoluciones de pantalla  
+ - Interfaces responsivas  
+
+Flexbox, es un sistema donde:  
+- Los elementos se vuelven **flexibles**  
+- Se colocan **automáticamente**  
+- Permite crear diseños **adaptables** con menos código  
+
+#### Diseño Responsive
+
+Técnica que permite a los sitios web adaptarse automáticamente a diferentes dispositivos (PC, tabletas, móviles) y tamaños de pantalla.
+
+**Características clave:**  
+- **Adaptabilidad:** Elementos que se redimensionan (texto, imágenes, menús)  
+- **Media Queries:** Reglas CSS condicionales según características del dispositivo  
+- **Rejillas fluidas:** Uso de porcentajes en lugar de medidas fijas  
+- **Elementos escalables:** Imágenes y tipografías que mantienen proporciones  
+
+#### Media query(CSS)
+Reglas CSS que aplican estilos condicionales según características del dispositivo o ventana del navegador.Crea diseños responsive que se adapten a diferentes dispositivos y tamaños.
+
+1. **Detectan características:**  
+   - Ancho/alto de pantalla  
+   - Orientación (horizontal/vertical)  
+   - Resolución  
+2. **Aplican estilos:**  
+   Solo cuando se cumplen las condiciones especificadas  
+
+**Uso típico:**  
+Adaptar layouts, tipografías y elementos visuales para cada tamaño de pantalla.
+
+## XML<a name="id5"></a>
+Lenguaje de marcado diseñado para almacenar y transportar datos de forma estructurada.
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+   <libro>
+      <titulo>El Principito</titulo>
+      <autor>Antoine de Saint-Exupéry</autor>
+      <año>1943</año>
+   </libro>
+   <libro>
+      <titulo>Cien años de soledad</titulo>
+      <autor>Gabriel García Márquez</autor>
+      <año>1967</año>
+   </libro>
+</catalogo>
 ```
