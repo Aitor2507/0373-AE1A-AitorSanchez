@@ -510,8 +510,21 @@ A medida que fue creciendo el Intenet tambien la información textual en las pag
 2. Estilos internos (en `<head>`)  
 3. Estilos inline (en etiquetas)  
 4. Reglas contradictorias: gana la última declarada  
-
+Reglas:
+ !important -> sobreescribe las reglas incluso si tiene menor especificidad.
+Herencia:
+ Propiedades como `color font-family` ,etc. Pueden heredarse, pero tiene menor prioridad que regla aplicadada directamente.
 ### Especificidad 
 Sistema de puntuación:  
-```plaintext
-Inline (1000) > ID (100) > Clase/Atributo (10) > Elemento (1)
+
+`Inline (1000) > ID (100) > Clase/Atributo (10) > Elemento (1)`
+### Estructura
+Conjunto de reglas que define estética final de los documentos X(HTML) que la usan. Cada regla formada por selector y conjunto de declaraciones.
+Declaracion-> Forma propiedad y valor asociado.
+Selector -> Nos sirve para definir a qué elemento o elementos 
+```css 
+ p {
+  font-size: 10 pt;
+  background-color: gray;
+ }
+```
