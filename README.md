@@ -735,7 +735,19 @@ Reglas CSS que aplican estilos condicionales según características del disposi
 
 **Uso típico:**  
 Adaptar layouts, tipografías y elementos visuales para cada tamaño de pantalla.
+```css
+/* Ejemplo de media query */
+body {
+  background-color: lightblue;
+}
 
+/* Cambiar el fondo para pantallas menores a 600px */
+@media (max-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+```
 ## XML<a name="id5"></a>
 Lenguaje de marcado diseñado para almacenar y transportar datos de forma estructurada.
 ```xml
