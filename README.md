@@ -5,7 +5,7 @@
 2. [Markdown](#id2)
 3. [HTML](#id3)
 4. [CSS](#id4)
-5. [XML](#id5)
+5. [Diseño Responsive](#id5)
 
 ## Github<a name="id1"></a>
 Utilizado para el control de versiones, es decir para tener un manejo de registros con los cambios de los diferentes archivos. Por otra parte podemos tener colaboradores y ver tambien los cambios y actualizaciones.
@@ -713,7 +713,7 @@ Flexbox, es un sistema donde:
 - Se colocan **automáticamente**  
 - Permite crear diseños **adaptables** con menos código  
 
-#### Diseño Responsive
+## Diseño Responsive <a name="id5"></a>
 
 Técnica que permite a los sitios web adaptarse automáticamente a diferentes dispositivos (PC, tabletas, móviles) y tamaños de pantalla.
 
@@ -723,7 +723,7 @@ Técnica que permite a los sitios web adaptarse automáticamente a diferentes di
 - **Rejillas fluidas:** Uso de porcentajes en lugar de medidas fijas  
 - **Elementos escalables:** Imágenes y tipografías que mantienen proporciones  
 
-#### Media query(CSS)
+### Media query(CSS)
 Reglas CSS que aplican estilos condicionales según características del dispositivo o ventana del navegador.Crea diseños responsive que se adapten a diferentes dispositivos y tamaños.
 
 1. **Detectan características:**  
@@ -747,21 +747,21 @@ body {
     background-color: lightgreen;
   }
 }
+/*Fondo de pantalla amarillo en 480*/
+@media (max-width: 480px) {
+  body {
+    background-color: yellow;
+  }
+}
 ```
-## XML<a name="id5"></a>
-Lenguaje de marcado diseñado para almacenar y transportar datos de forma estructurada.
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<catalogo>
-   <libro>
-      <titulo>El Principito</titulo>
-      <autor>Antoine de Saint-Exupéry</autor>
-      <año>1943</año>
-   </libro>
-   <libro>
-      <titulo>Cien años de soledad</titulo>
-      <autor>Gabriel García Márquez</autor>
-      <año>1967</año>
-   </libro>
-</catalogo>
-```
+En este caso cuando sea menor a 600 px el fondo se hará de color verde y este cuando pase a ser menor a 480px será de color amarillo.
+
+### Media queries posibilidades
+Se pueden definir caracterísitcas para determinar resoluciones y anchos de pantalla, puede determinar orientación vertical u horizontal. Es posible poner condiciones AND NOT ONLY OR:
+
+**Parámetros:**  
+- **width:** anchura de ventana navegador (admite max i min ej. max-width)
+- **height:** altura de ventana navegador
+- **device-width:** anchura resolución de pantalla
+- **device-heigth:** altura resolución de pantalla
+- **orientation:** dispositivo horizontal o vertical
